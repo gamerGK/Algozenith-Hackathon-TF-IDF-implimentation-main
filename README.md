@@ -1,9 +1,9 @@
-# TF-IDF-implimentation
+# TF-IDF-implimentation 
 
 # Coding-Problem-Search-Engine
-forgot the question name of a particular website. No worries, go to our website and search for your questions by putting relevant keywords and hit search; 
+forgot the question name of a particular website. No worries, go to our website and search for your questions by putting relevant keywords and hitting search; 
 
-#### Website Link - https://codesearch-by-oxone.netlify.app/
+#### Website Link - https://tf-idf-search-engine-q2a5.onrender.com
 
 ## Developer: GAURAV KUMAR
 ## Institution : IIT Kharagpur
@@ -21,7 +21,7 @@ A search engine that allows users to search for questions based on their query. 
 
 ## Features
 
-- Web scraping: The search engine scrapes question data from websites such as LeetCode, Codeforces, and CodeChef using Beautiful Soup and Selenium.
+- Web scraping: The search engine scrapes question data from websites such as LeetCode, Codeforces, and CodeChef (But in this, I've only scrapped data from Leetcode for simplicity) using Beautiful Soup and Selenium.
 - TF-IDF algorithm: It implements the TF-IDF algorithm to find potential documents (questions) related to the user's query.
 - Web application: The search engine is integrated into a web application built with Flask and HTML, allowing users to search for questions and view the results.
 
@@ -30,7 +30,7 @@ A search engine that allows users to search for questions based on their query. 
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/oxone-999/Coding-Problem-Search-Engine.git
+   git clone https://github.com/gamerGK/Algozenith-Hackathon-TF-IDF-implimentation-main.git
 
 2. Install dependencies:
 
@@ -52,28 +52,15 @@ for intalling it globally
 - For hosting the backend locally go to Website/Backend
 
   ```shell
-  npm install
+ python -m flask --app app run
   ```
-
-  ```shell
-  node server.js
-  ```
-- For hosting the frontend locally go to Website/Frontend/my_app/
-
-  ```shell
-  npm install
-  ```
-  ```shell
-  npm start
-  ```
-- Now you are good to go, now the website will be hosted on http://localhost:3000
+- Now you are good to go, now the website will be hosted on http://127.0.0.1:5000
 
 ## Usage
 
 1. Perform a search:
 
 - Enter a query in the search box.
--  Select the website you want to search
 - The search engine will process the query using the TF-IDF algorithm and display relevant questions as results.
 
 ## Contributing
@@ -81,5 +68,5 @@ for intalling it globally
 Thank you for considering contributing to the search engine project! Please follow the guidelines below:
 
 1. Fork the repository and create a new branch for your contributions.
-2. Make your changes, add tests if applicable, and ensure that the code passes all existing tests.
-3. Submit a pull request detailing your changes, the motivation behind them, and any relevant information.
+2. Make your changes, add tests if applicable, and make sure that the code passes all existing tests.
+3. Submit a pull request detailing your changes, their motivation, and any relevant information.
