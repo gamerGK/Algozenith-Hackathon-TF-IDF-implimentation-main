@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px; /* Adjust the width as desired */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+  padding: 12px 20px; /* Increase the padding to make the search bar longer */
+  width: 600px; /* Fill the entire width of the container */
+  max-width: 50vw;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  outline: none;
+}
+
+/* Align the placeholder text to the left */
+.search-box input[type="text"]::placeholder {
+  text-align: left;
+  padding-left: 0px; /* Add left padding to move the text to the left corner */
+}
+
+.mic-icon {
+  position: absolute;
+  right: 15px; /* Adjust the left value to move the mic button */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Adjust the width to resize the mic.png image */
+  height: auto; /* Let the height adjust automatically based on the width */
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-button button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

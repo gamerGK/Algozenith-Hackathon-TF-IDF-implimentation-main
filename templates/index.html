@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='google.png') }}" alt="Search Engine Logo">
+    </div>
+    <form method="POST" action="/">
+      <div class="search-box">
+        <img src="{{ url_for('static', filename='search.png') }}" alt="Search Icon" class="search-icon">
+        <input type="text" name="search" placeholder="Search your question or type a keyword " required>
+        <img src="{{ url_for('static', filename='mic.png') }}" alt="Search audio Logo" class="mic-icon">
+      </div>
+      <div class="search-button">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    {% if status=="Found" %}
+    <table>
+      <tr>
+          <th>Question Link</th>
+          <th>Score</th>
+      </tr>
+      {% for result in results %}
+      <tr>
+        <td><a href="{{ result['Question Link']}}" target="_blank">{{ result['Question Link'] }}</a></td>
+        <td>{{ result['Score'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+    {% if status=="Not Found" %}
+    <div>
+      <p>No results found!!</p>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
