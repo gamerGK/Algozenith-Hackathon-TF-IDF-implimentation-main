@@ -47,7 +47,7 @@ A search engine that allows users to search for questions based on their query. 
   ```shell
   pip install -user bsoup selenium
   ```
-for intalling it globally
+for installing it globally
 
 - For hosting the backend locally go to Website/Backend
 
