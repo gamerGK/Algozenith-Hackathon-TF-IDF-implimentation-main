@@ -52,7 +52,7 @@ for installing it globally
 - For hosting the backend locally go to Website/Backend
 
   ```shell
- python -m flask --app app run
+  python -m flask --app app run
   ```
 - Now you are good to go, now the website will be hosted on http://127.0.0.1:5000
 
