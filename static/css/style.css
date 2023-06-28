@@ -98,3 +98,24 @@ table th {
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/* Formatting tasks */
+.profile-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
